@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "WeChatSdk"
+  s.name         = "iOSWeChatSdk"
   s.version      = "1.5.0"
   s.summary      = "iOS WeChatSdk."
 
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "https://open.wexin.qq.com"
+  s.homepage     = "http://github.com/smalllixin"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = ""
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/smalllixin/WeChatSdk.git", :tag => "1.5.0.1" }
+  s.source       = { :git => "https://github.com/smalllixin/WeChatSdk_iOS.git", :tag => "1.5.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,9 +89,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "sdk/**/*.{h,m}", "Classes/**/*.{h,m}"
+  s.source_files  = "sdk/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
-  s.ios.vendored_library = "sdk/WeChatSDK_1.5/libWeChatSDK.a", "sdk/WeChatSDK_1.5_OnlyIphone"/libWeChatSDK.a"
+  s.vendored_libraries = 'sdk/WeChatSDK_1.5/libWeChatSDK.a', 'sdk/WeChatSDK_1.5_OnlyIphone/libWeChatSDK.a'
   # s.public_header_files = "Classes/**/*.h"
 
 
