@@ -14,6 +14,11 @@
 		82BEB6071A7A2DC5004855BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82BEB6061A7A2DC5004855BA /* Images.xcassets */; };
 		82BEB60A1A7A2DC5004855BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BEB6081A7A2DC5004855BA /* LaunchScreen.xib */; };
 		82BEB6161A7A2DC5004855BA /* wechat_sdkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BEB6151A7A2DC5004855BA /* wechat_sdkTests.m */; };
+		82BEB62A1A7A2DE8004855BA /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BEB6211A7A2DE8004855BA /* libWeChatSDK.a */; };
+		82BEB62C1A7A2DE8004855BA /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BEB6261A7A2DE8004855BA /* libWeChatSDK.a */; };
+		82BEB62F1A7A2E09004855BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BEB62E1A7A2E09004855BA /* SystemConfiguration.framework */; };
+		82BEB6311A7A2E10004855BA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BEB6301A7A2E10004855BA /* libz.dylib */; };
+		82BEB6331A7A2E18004855BA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BEB6321A7A2E18004855BA /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		82BEB60F1A7A2DC5004855BA /* wechat_sdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wechat_sdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BEB6141A7A2DC5004855BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82BEB6151A7A2DC5004855BA /* wechat_sdkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wechat_sdkTests.m; sourceTree = "<group>"; };
+		82BEB6211A7A2DE8004855BA /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		82BEB6231A7A2DE8004855BA /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		82BEB6241A7A2DE8004855BA /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		82BEB6261A7A2DE8004855BA /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		82BEB6281A7A2DE8004855BA /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		82BEB6291A7A2DE8004855BA /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		82BEB62E1A7A2E09004855BA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		82BEB6301A7A2E10004855BA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		82BEB6321A7A2E18004855BA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82BEB6331A7A2E18004855BA /* libsqlite3.dylib in Frameworks */,
+				82BEB6311A7A2E10004855BA /* libz.dylib in Frameworks */,
+				82BEB62F1A7A2E09004855BA /* SystemConfiguration.framework in Frameworks */,
+				82BEB62C1A7A2DE8004855BA /* libWeChatSDK.a in Frameworks */,
+				82BEB62A1A7A2DE8004855BA /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,10 @@
 		82BEB5ED1A7A2DC5004855BA = {
 			isa = PBXGroup;
 			children = (
+				82BEB6321A7A2E18004855BA /* libsqlite3.dylib */,
+				82BEB6301A7A2E10004855BA /* libz.dylib */,
+				82BEB62E1A7A2E09004855BA /* SystemConfiguration.framework */,
+				82BEB61F1A7A2DE8004855BA /* sdk */,
 				82BEB5F81A7A2DC5004855BA /* wechat_sdk */,
 				82BEB6121A7A2DC5004855BA /* wechat_sdkTests */,
 				82BEB5F71A7A2DC5004855BA /* Products */,
@@ -117,6 +140,35 @@
 				82BEB6141A7A2DC5004855BA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82BEB61F1A7A2DE8004855BA /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				82BEB6201A7A2DE8004855BA /* WeChatSDK_1.5 */,
+				82BEB6251A7A2DE8004855BA /* WeChatSDK_1.5_OnlyIphone */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		82BEB6201A7A2DE8004855BA /* WeChatSDK_1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				82BEB6211A7A2DE8004855BA /* libWeChatSDK.a */,
+				82BEB6231A7A2DE8004855BA /* WXApi.h */,
+				82BEB6241A7A2DE8004855BA /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.5;
+			sourceTree = "<group>";
+		};
+		82BEB6251A7A2DE8004855BA /* WeChatSDK_1.5_OnlyIphone */ = {
+			isa = PBXGroup;
+			children = (
+				82BEB6261A7A2DE8004855BA /* libWeChatSDK.a */,
+				82BEB6281A7A2DE8004855BA /* WXApi.h */,
+				82BEB6291A7A2DE8004855BA /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.5_OnlyIphone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +397,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wechat_sdk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sdk/WeChatSDK_1.5",
+					"$(PROJECT_DIR)/sdk/WeChatSDK_1.5_OnlyIphone",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -355,6 +412,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wechat_sdk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sdk/WeChatSDK_1.5",
+					"$(PROJECT_DIR)/sdk/WeChatSDK_1.5_OnlyIphone",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
